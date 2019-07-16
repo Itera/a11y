@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="no">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" type="text/css" href="style-file.css">
+
+    <title>Tidenes kommune</title>
+</head>
+
+<body>
+<div class="header">
+    <a class="tidenes-logo-link" href="https://Tidenes.kommune.no">
+        <img src="img/kommune-logo.png" height="80px">
+        <span class="logo-text-header">Tidenes</span>
+    </a>
+
+    <div class="right-hover-menu" tabindex="1">
+        <div class="burger-menu">
+            <span> </span>
+            <span> </span>
+            <span> </span>
+        </div>
+        <ul class="menu-items">
+            <li><a href="#">Kindergarden</a></li>
+            <li><a href="https://ruter.no/" title="takes you to Ruter">Buss info</a></li>
+            <li><a href="#">Recycling</a></li>
+            <li><a href="#">Vote</a></li>
+        </ul>
+    </div>
+</div>
+
+<div class="main">
+    <div class="news-block" id="welcomearticle">
+            <div class="image-wrapper">
+                <img  onclick="theFunction('welcomearticle');" src="img/kommune-image.png" />
+            </div>
+        <a href="#welcomearticle" onclick="theFunction('welcomearticle');">
+            <p class="h2">Welcome to Tidenes</p>
+        </a>
+        <div class="moreinfo">
+            <p>This is the website where you find everything you could possibly need to know about our awesome municipality.</p>
+            <a class="h4">Want news about Tidenes?</a>
+            <p>Tidenes Morgen is the name of our local newspaper. Do you want them to contact you about a subscription?
+            </br>
+            Please fill in form and submit. Tidenes Morgen will contact you.
+            </p>
+            <div class="newsletter-form">
+                <input type="text" placeholder="Navn" /> <br><br>
+                <input type="text" placeholder="E-mail" />  <br><br>
+                <input type="text" placeholder="Fødselsdato" />
+                <button type="submit" class="sendFormBtn" onclick="youSubmitted()">Send!</button>
+            </div>
+        </div>
+    </div>
+    <div class="news-block" id="eventsarticle">
+        <div class="image-wrapper">
+            <img src="img/kafka.jpg" alt="kafka.jpg" onclick="theFunction('eventsarticle');"/>
+        </div>
+        <a href="#eventsarticle" onclick="theFunction('eventsarticle');">
+            <p class="h2">Events</p>
+        </a>
+        <div class="moreinfo">
+            <div>
+                There is a lot of cool things going on in Tidenes!
+                Tidenes festival will be held every year - and that's not all!
+                You could enjoy a cold beverage at Tidenes bryggeri, watch some art at Tidens Kunstgalleri,
+                or simply get a breakfast at our famous bakery Tidenes Beste.
+                Click <a id="link" href="https://www.facebook.com/events/">Here</a> for a event overview.
+            </div>
+        </div>
+    </div>
+    <iframe width="1240" height="315" style="padding:10px;"
+            src="https://www.youtube.com/embed/I4IITZiara0?autoplay=1"
+            frameborder="0"
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+    ></iframe>
+    <div class="news-block colorbox-yellow" id="schoolsarticle">
+        <a href="#schoolsarticle" onclick="theFunction('schoolsarticle');">
+        <div class="color-wrapper">
+            <p class="h2 inside-block">Schools and education</p>
+            <div class="moreinfo">
+                <p>Our school in Tidenes is pretty great. 1th to 10th grade are all gathered in our brand new school-building downtown.
+                    If you recently moved in to Tidenes, remember to fill out the
+                    <a style="font-weight: 600;">form</a> to provide your child with state of the art education facilities and equipment.
+                    Remember, children are the future, save the planet by providing your child with the best of the best education we can provide
+                </p>
+            </div>
+        </div>
+        </a>
+    </div>
+    <div class="news-block colorbox-red" id="healthcarearticle">
+        <a href="#healthcarearticle" onclick="theFunction('healthcarearticle');">
+        <div class="color-wrapper">
+            <p class="h2 inside-block">Healthcare</p>
+            <div class="moreinfo">
+                <p>In Tidenes we have family doctors who treat patients who are without their own family doctor in Tidenes.</p>
+                <p id="link">Click here to read more</p>
+            </div>
+        </div>
+        </a>
+    </div>
+
+    <div class="news-block colorbox-red" id="inhabitantsarticle">
+        <a href="#healthcarearticle" onclick="theFunction('inhabitantsarticle');">
+        <div class="color-wrapper">
+            <p class="h2 inside-block">Inhabitants</p>
+            <div class="moreinfo">
+                <p>Tidenes has a rich diversity of inhabitants, from nature and fitness lovers to more traditional Generation Z people, with their fancy dance moves and funny pranks. Tidenes is a great place to live, as indicated by the graph below.</p>
+
+                <div id="graph-of-inhabitants">
+                    <p style="width:100%">Graph displaying our diversity</p>
+                    <div title="of Kids below age 12" id="group-1"></div>
+                    <div title="Teenagers (12-17)" id="group-2"></div>
+                    <div title="Young adults (18 - 25)" id="group-3"></div>
+                    <div title="Adults (26 - 60)" id="group-4"></div>
+                    <div title="Senior citizens (61+)" id="group-5"></div>
+                </div>
+            </div>
+        </div>
+        </a>
+    </div>
+
+    <div class="news-block" id="iteraarticle">
+        <div class="image-wrapper">
+            <img src="img/itera.svg" onclick="theFunction('iteraarticle');">
+        </div>
+    </div>
+</div>
+
+<div class="footer">
+    <div class="address">
+        <a href="tel:555555555">Call 555 55 555</a>
+    </div>
+    <content id="subfooter" class="work-with-us">
+        <p>Vacancies</p>
+        <p>Working for us</p>
+    </content>
+    <div id="subfooter" class="social-media">
+        <img src="img/follow-instagram.svg" onclick="goToInsta()" />
+        <img src="img/follow-face.svg" onclick="goToFacebook()" />
+    </div>
+</div>
+</body>
+
+<script type="text/javascript">
+    function goToFacebook () {
+        window.location.href = "https://media.giphy.com/media/9GIFGeuuinRxgEj7Zq/giphy.gif";
+    }
+
+    function goToInsta () {
+        window.location.href = "https://media.giphy.com/media/10rW4Xw9eO0RmU/giphy.gif";
+    }
+
+
+    function theFunction (elementId) {
+        var element = document.getElementById(elementId);
+
+        if (element.classList) {
+            element.classList.toggle("infocus");
+        } else {
+            // For IE9
+            var classes = element.className.split(" ");
+            var i = classes.indexOf("infocus");
+
+            if (i >= 0)
+                classes.splice(i, 1);
+            else
+                classes.push("infocus");
+            element.className = classes.join(" ");
+        }
+    }
+
+    function youSubmitted () {
+        alert("Pretend you send something somewhere. After all this isn't real");
+    }
+</script>
+</html>

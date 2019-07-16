@@ -1,0 +1,363 @@
+
+html { height: 100%; }
+
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    position: relative;
+    background-color: white;
+    font-family: "Tidenes Sans Regular", "Lato", sans-serif, Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+a {
+    cursor: default !important;
+}
+
+.h1 {
+    display: block;
+    font-size: 2em;
+    margin-top: 0.67em;
+    margin-bottom: 0.67em;
+    margin-left: 0;
+    margin-right: 0;
+    font-weight: bold;
+}
+
+.h2 {
+    display: block;
+    font-size: 1.5em;
+    margin-top: 0.83em;
+    margin-bottom: 0.83em;
+    margin-left: 0;
+    margin-right: 0;
+    font-weight: bold;
+}
+
+.h3 {
+    display: block;
+    font-size: 1.17em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-left: 0;
+    margin-right: 0;
+    font-weight: bold;
+}
+
+.h4 {
+    display: block;
+    font-size: 1em;
+    margin-top: 1.33em;
+    margin-bottom: 1.33em;
+    margin-left: 0;
+    margin-right: 0;
+    font-weight: bold;
+}
+
+.h5 {
+    display: block;
+    font-size: .83em;
+    margin-top: 1.67em;
+    margin-bottom: 1.67em;
+    margin-left: 0;
+    margin-right: 0;
+    font-weight: bold;
+}
+
+.h6 {
+    display: block;
+    font-size: .67em;
+    margin-top: 2.33em;
+    margin-bottom: 2.33em;
+    margin-left: 0;
+    margin-right: 0;
+    font-weight: bold;
+}
+
+a:focus {
+    outline: 0;
+}
+
+.header {
+    max-width: 1200px;
+    margin: auto;
+    padding: 25px 50px 25px 50px;
+    background-color: white;
+    border-bottom: 1px solid #f2f2f2;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header .right-hover-menu {
+    width: 30px;
+    height: 30px;
+    position: relative;
+}
+
+.header .right-hover-menu:hover {
+    cursor: pointer;
+}
+
+.header .right-hover-menu .menu-items {
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 10px;
+    min-width: 200px;
+    border: 1px solid grey;
+    padding: 12px;
+    list-style-type: none;
+    z-index: 200;
+    background-color: white;
+}
+
+
+.header .right-hover-menu .menu-items li {
+    padding: 5px 16px;
+}
+
+.header .right-hover-menu:hover .menu-items {
+    display: inline-block;
+}
+
+.header .right-hover-menu span {
+    display: block;
+    width: 30px;
+    height: 3px;
+    background-color: black;
+    margin: 4px 2px;
+}
+
+.main {
+    color: #2A2859;
+    padding: 25px 50px 210px 50px;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.news-block a {
+    color: #5d5c5c;
+}
+.main * {
+    word-break: break-word;
+}
+.main h1 {
+    font-family: "Tidenes Sans Bold"
+}
+.footer {
+    margin: auto;
+    padding: 25px 50px 25px 50px;
+    background-color: #2A2859;
+    color: white;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    max-height: 200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.footer a {color: white;}
+
+.footer a:hover {
+    color: #93F5FF;
+}
+
+.footer .social-media img {
+    display: block;
+    margin: 12px;
+    width: 24px;
+    height: 24px;
+}
+
+.footer .social-media img:hover {
+    cursor: pointer;
+    border: 2px solid #f9c66b;
+}
+
+.footer .work-with-us p {
+    font-size: 2vw;
+}
+
+.address {
+    background-color: transparent;
+    border: 2px solid #f9c66b;
+    padding: 10px 25px;
+    display: inline;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.address a {
+    text-decoration: none;
+}
+
+.tidenes-logo-link {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+.logo-text-header {
+    margin-left: 22px;
+    font-size: 2em;
+    font-family: Arial;
+    text-decoration: none;
+    color: #727272;
+    font-weight: bold;
+}
+
+.news-block {
+    width: 50%;
+    padding: 10px;
+}
+
+.news-block .inside-block {
+    padding-top: 23%;
+}
+
+.news-block img {
+    max-width: 100%;
+}
+
+.image-wrapper {
+    position: relative;
+    height: 0;
+    padding-bottom: 56%;
+    overflow: hidden;
+}
+
+.image-wrapper img {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.colorbox-yellow .color-wrapper,
+.colorbox-red .color-wrapper {
+    position: relative;
+    height: 0;
+    padding-bottom: 56%;
+    text-align: center;
+}
+
+.colorbox-yellow .color-wrapper {
+    background-color: #f68a7e;
+}
+.colorbox-red .color-wrapper {
+    background-color: #f9c66b;
+}
+
+.color-wrapper h2 {
+    position: absolute;
+    width: 100%;
+    top: 35%;
+}
+
+.news-block:not(.infocus) .moreinfo {
+    display: none;
+}
+
+.news-block .color-wrapper .moreinfo {
+    padding: 0 10%;
+}
+
+
+.news-block.infocus {
+    width: 100%;
+}
+
+.news-block.infocus h2 {
+    position: relative;
+    margin-top: 0;
+    padding-top: 26px;
+}
+
+.news-block a {
+    text-decoration: none;
+}
+
+input {
+    font-size: 18px;
+    color: #2A2859;
+    padding: 12px;
+    min-width: 25vw;
+}
+
+.sendFormBtn {
+    display: block;
+    color: #2a2859;
+    border: 2px solid #2a2859;
+    padding: 15px;
+    background-color: white;
+    margin: 12px 0;
+    min-width: 120px;
+    font-size: 18px;
+}
+
+#graph-of-inhabitants {
+    display: flex;
+    flex-wrap: wrap;
+    height: 20px;
+    width: 80%;
+    margin: 10%;
+}
+
+#group-1, #group-2, #group-3, #group-4, #group-5 {
+    height: 100%;
+}
+
+#group-1 {
+    width: 20%;
+    background-color: hsl(0, 0%, 80%);
+}
+
+#group-2 {
+    width: 10%;
+    background-color: hsl(0, 0%, 78%);
+}
+
+#group-3 {
+    width: 35%;
+    background-color: hsl(0, 0%, 76%);
+}
+
+#group-4 {
+    width: 20%;
+    background-color: hsl(0, 0%, 74%);
+}
+
+#group-5 {
+    width: 15%;
+    background-color: hsl(0, 0%, 72%);
+}
+
+#link:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+#iteraarticle {
+    margin-top: 20px;
+}
+
+@media only screen and (max-width: 400px) {
+    p{
+        font-size: 14px;
+    }
+    main, header, footer {
+        padding: 30px 12px;
+    }
+    input {
+        width: 100%;
+        border: 1px solid #2A2859;
+    }
+}
