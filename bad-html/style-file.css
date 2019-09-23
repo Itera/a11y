@@ -349,6 +349,15 @@ input {
     margin-top: 20px;
 }
 
+.arrow-link {
+    margin-left: 10px;
+    text-decoration: none;
+}
+
+.arrow-link:after {
+    content: "\2192";
+}
+
 @media only screen and (max-width: 400px) {
     p{
         font-size: 14px;
