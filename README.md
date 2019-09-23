@@ -4,7 +4,7 @@ Tidenes Kommune was made in a hurry, and so was the website.
 DiFi has already noticed that it doesn't work very well for a lot of users and has threatened with fines unless fixed asap.
 Tidenes don't have that kind of money so they have to attent these issues right away.
 
-##Tasks
+## Tasks
 Start with the failures shown in a automated test tool.
 
 1. **Go to wave.webaim.org and use their test tool to find errors and failures**
@@ -20,7 +20,7 @@ Start with the failures shown in a automated test tool.
      - Are there any divs; can they be something else?
 
 
-###Styling issues to look for:
+### Styling issues to look for:
 1. Are the color contrasts approved?
    1. go to contrast-ratio.com
    2. Pick a background-color from the page and paste the color code into the left field (background)
